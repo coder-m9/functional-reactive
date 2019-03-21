@@ -1,6 +1,6 @@
 import java.util.*;
 
-class StreamTest {
+class Stream {
 
 public static void main( String arg[])
 {
