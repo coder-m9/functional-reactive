@@ -11,13 +11,13 @@ public class App {
     Arrays.asList("Java", "Javascript", "C", "Go", "C++");
 
 
-	public String greeting(){
+	public void getGreeting(){
 	Flowable.just("Hello world").subscribe(System.out::println);
 	}
    
     public static void main(String[] args) {
        
-	new App().greeting();	
+	new App().getGreeting();	
 
     new App().myList
     .stream()
@@ -25,5 +25,6 @@ public class App {
     .map(String::toUpperCase)
     .sorted()
     .forEach(System.out::println);
-    }
+    
+	}
 }
