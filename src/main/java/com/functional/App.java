@@ -19,9 +19,10 @@ public class App {
        
 	new App().getGreeting();	
 
+	// Functional composition and pipeline
     new App().myList
     .stream()
-    .filter(s -> s.startsWith("c"))
+    .filter(s -> s.startsWith("J"))
     .map(String::toUpperCase)
     .sorted()
     .forEach(System.out::println);
